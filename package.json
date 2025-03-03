@@ -1,0 +1,26 @@
+{
+  "name": "bookmanagementserver",
+  "version": "1.0.0",
+  "description": "Library management server creation using node, express and mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivanshSol/LibManagemt.git"
+  },
+  "author": "Shivansh Sol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShivanshSol/LibManagemt/issues"
+  },
+  "homepage": "https://github.com/ShivanshSol/LibManagemt#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
