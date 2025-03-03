@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShivanshSol/LibManagemt.git"
+    "url": "git+https://github.com/ShivanshSol/LibManagement.git"
   },
   "author": "Shivansh Sol",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ShivanshSol/LibManagemt/issues"
+    "url": "https://github.com/ShivanshSol/LibManagement/issues"
   },
-  "homepage": "https://github.com/ShivanshSol/LibManagemt#readme",
+  "homepage": "https://github.com/ShivanshSol/LibManagement#readme",
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
