@@ -40,7 +40,7 @@ app.get("/users", (req,res) => {
 */
 
 app.get("/users/:id", (req,res) =>{
-		const {id} = req.params; //to fetch the id present in req.
+		const { id } = req.params; //to fetch the id present in req.
 		const user = users.find((each) =>each.id === id);
 		
 		if(!user){
@@ -68,7 +68,7 @@ app.get("/users/:id", (req,res) =>{
 */
 
 app.post("/users", (req,res) => {
-	const {id, name, surname, email, subscriptionType, subscriptionDate} = req.body;
+	const { id, name, surname, email, subscriptionType, subscriptionDate } = req.body;
 
 	const user =users.find((each) => each.id === id);
 	if (user){
@@ -104,10 +104,10 @@ app.post("/users", (req,res) => {
 */
 
 app.put("/users/:id", (req,res) => {
-	const {id} = req.params;
-	const {users} = req.body;
+	const { id } = req.params;
+	const { data } = req.body;
 
-	const user =user.find((each) => each.id === id);
+	const user = users.find((each) => each.id === id);
 
 	if(!user){
 		return res.status(404).json({
@@ -120,12 +120,10 @@ app.put("/users/:id", (req,res) => {
 		if(each.id === id){
 			return{
 				...each,
-				...users
+				...data
 			};
 		}
-		else{
 			return each;
-		}
 	});
 
 	return res.status(200).json({
@@ -135,6 +133,7 @@ app.put("/users/:id", (req,res) => {
 	});
 
 });
+
 
 
 
