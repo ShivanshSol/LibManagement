@@ -28,6 +28,7 @@ POST : Create/Add a new book
 
 GET : Get a book by ID
 PUT : Update a book by ID
+DELETE : Delete a book by ID
 
 
 ### /books/issued
